@@ -1,0 +1,55 @@
+/* home.component.css */
+.full-screen-image {
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Hide overflowing content */
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
+  }
+  
+  .full-screen-image img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Scale the image to cover the entire container */
+    display: block; 
+  }
+  
+  .intro-section {
+    text-align: justify;
+    padding: 20px;
+    margin: 0;
+  }
+  
+  .intro-section h2 {
+    text-align: center;
+    font-size: 2rem; /* Adjust the font size as needed */
+  }
+
+  /* home.component.css */
+.product-card {
+    text-align: center;
+    margin: 10px 0; /* Add space between product cards */
+  }
+  
+ 
+.product-card img {
+    width: 200px; /* Increase the width for larger images */
+    height: 200px; /* Increase the height for larger images */
+    border-radius: 50%; /* Create circular images */
+  }
+  
+  
+  @media (max-width: 768px) {
+    /* On small screens, stack product cards one below another */
+    .product-card {
+      width: 100%; /* Full width */
+      max-width: 100%; /* Ensure images don't overflow container */
+    }
+  }
+
+  h2 {
+    margin: 20px;
+  }
+  
+
+  

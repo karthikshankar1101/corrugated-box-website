@@ -1,0 +1,89 @@
+/* product-catalog.component.css */
+.product-catalog-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
+    margin: 10px;
+  }
+  
+  .product {
+    position: relative;
+    width: 100%;
+    perspective: 1000px; /* Set the perspective for the 3D effect */
+  
+    /* Set a fixed height for better alignment */
+    height: 350px; /* Adjust the height as needed */
+  }
+  
+  .product .card {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d; /* Ensure 3D transformations are preserved */
+  
+    transition: transform 1s;
+  }
+  
+  .product:hover .card {
+    transform: rotateY(180deg); /* Flip the card when hovered */
+  }
+  
+  .product .front,
+  .product .back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .product .front {
+    background-color: #fff;
+    z-index: 2;
+  }
+  
+  .product .back {
+    background-color: #f0f0f0;
+    transform: rotateY(180deg);
+    z-index: 1;
+  }
+  
+  .product-image {
+    flex: 1;
+  }
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  h3 {
+    color: #007bff;
+    font-size: 1.5rem;
+    padding: 10px;
+  }
+  
+  .product-description {
+    color: #333;
+    font-size: 1rem;
+    padding: 10px;
+    margin: 0;
+  }
+  
+  /* Media Query for Responsiveness */
+  @media (max-width: 767px) {
+    .product-catalog-container {
+      grid-template-columns: 1fr;
+    }
+  
+    .product {
+      height: auto;
+      perspective: initial; /* Remove 3D perspective on smaller screens */
+    }
+  }
+  

@@ -1,0 +1,49 @@
+/* about-us.component.css */
+.about-us-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .about-us-section, .vision-mission-section, .plant-capacity-section,
+  .product-catalog-section, .machine-specifications-section,
+  .lab-equipment-section, .serving-sectors-section {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  h2 {
+    color: #007bff;
+    font-size: 1.5rem;
+  }
+  
+  h3 {
+    color: #007bff;
+    font-size: 1.3rem;
+  }
+  
+  ul, p {
+    font-size: 1.2rem;
+  }
+  
+  .vision, .mission {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 20px;
+  }
+  
+  /* Media Query for Responsiveness */
+  @media (max-width: 767px) {
+    .about-us-section, .vision-mission-section, .plant-capacity-section,
+    .product-catalog-section, .machine-specifications-section,
+    .lab-equipment-section, .serving-sectors-section {
+      padding: 10px;
+    }
+    
+    .vision, .mission {
+      margin-top: 10px;
+    }
+  }
+  

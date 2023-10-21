@@ -1,0 +1,62 @@
+/* contact-us.component.css */
+.container {
+    padding: 20px; /* Add some padding around the content */
+  }
+  
+  .row {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .columns-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .column {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .column h3 {
+    font-size: 1.5rem; /* Adjust heading size as needed */
+  }
+  
+  /* Style Google Maps iframe */
+  iframe {
+    border: 0;
+  }
+  
+  /* Style form elements */
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  /* Media Query for Responsiveness */
+  @media (max-width: 767px) {
+    .columns-wrapper {
+      grid-template-columns: 1fr; /* Stack columns on small screens */
+    }
+  
+    .column h3 {
+      font-size: 1.2rem;
+    }
+  }
+  
